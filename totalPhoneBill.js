@@ -1,6 +1,6 @@
 function totalPhoneBill(phoneString){
   var dataSplit = phoneString.split(',');
-  totalBill = 0;
+  var totalBill = 0;
 
   for(x=0;x<dataSplit.length;x++){
     var phoneRecord = dataSplit[x].trim();
@@ -12,7 +12,6 @@ function totalPhoneBill(phoneString){
       totalBill += 0.65;
     }
   }
-  //console.log(totalBill);
   return totalBill;
 };
 console.log(totalPhoneBill('call, sms, call,sms,sms'));

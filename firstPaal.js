@@ -8,8 +8,6 @@ function firstPaal(){
     emptyString.push(splitString[i]);
 
   }
-
 console.log(emptyString[0]);
 }
-
 firstPaal();
