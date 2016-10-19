@@ -9,7 +9,7 @@ if(listOfarray == 'call'){
 if(listOfarray == 'sms'){
   totalBill -= 0.75;
 }
-if(listOfarray === 'data'){
+if(listOfarray == 'data'){
   totalBill -= 12;
 }
   }
