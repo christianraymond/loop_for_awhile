@@ -1,18 +1,18 @@
-function totalPhoneBill(){
-  stringSplit = 'call, sms, call, sms, sms';
-  stringRecord = stringSplit.split(',');
-  emptyrecord = [];
+function totalPhoneBill(phoneString){
+  var dataSplit = phoneString.split(',');
+  totalBill = 0;
 
-  for( var x=0;x<stringRecord.length;x++){
-    return emptyrecord.push(stringRecord[x])
+  for(x=0;x<dataSplit.length;x++){
+    var phoneRecord = dataSplit[x].trim();
 
-  if(emptyrecord.startsWtih('ca')){
-    return emptyrecord
+    if(phoneRecord == 'call'){
+      totalBill += 2.75;
+    }
+    if(phoneRecord == 'sms'){
+      totalBill += 0.65;
+    }
   }
-  if(emptyrecord.startsWtih('sm')){
-    return emptyrecord
-  };
-
-  }
+  //console.log(totalBill);
+  return totalBill;
 };
-console.log(totalPhoneBill());
+console.log(totalPhoneBill('call, sms, call,sms,sms'));
