@@ -1,5 +1,10 @@
 function findLongestWord(str) {
-  return str.split(',');
-}
+   var chopString = str.split(',');
+   storeVar = 0;
+for(var i=0; i<chopString.length; i++){
+  var listOfString = chopString[i];
+  }
 
-console.log(findLongestWord("The quick brown", "fox jumped over the lazy dog"));
+return listOfString;
+};
+console.log(findLongestWord('Ngubana,Christian,TheExpendable'));
